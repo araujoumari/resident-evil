@@ -98,7 +98,7 @@ body {
 
 .premios {
     display: flex;
-    width: 100vw;
+    width: 98.8vw;
     height: 200vh;
 
     margin-top: 50px;
@@ -121,6 +121,7 @@ body {
 }
 
 #awards > p {
+    width: 300px;
     padding: 10px;
     color: white;
     transform: translate(10%,-90%);
@@ -128,7 +129,7 @@ body {
 
 #criticas {
     margin: 50px;
-    margin-left: 190px;
+    margin-left: 150px;
     background-color: pink;
 }
 
@@ -246,4 +247,26 @@ body {
 
 #botao:active {
     background-color: rgba(210, 151, 23, 0.85);
-}    
+}
+
+/*Footer*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.62);
+    padding-bottom: 90px;
+}
+
+.atendimento-comercial > h2 {
+    padding: 30px;
+    color: white;
+    text-shadow: 2px 2px 5px gray;
+}
+
+.atendimento-comercial > a {
+    color:white;
+    padding-top: 10px;
+    padding-left: 120px;
+}
+
