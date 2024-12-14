@@ -146,63 +146,24 @@ body {
 
 .sobre {
     background-color: black;
+    padding-bottom: 150px;
 }
 
 .sobre > h2 {
-    padding: 50px;   
+    padding: 50px;
+    color: white;
     text-shadow: 2px 2px 5px gray;
-    color: white;
 }
 
-.accordion {
-    width: 80vw;
-    height: 100vh;
+.sobre > .accordion {
     margin: auto;
+    width: 80vw;
 }
 
-.accordion-item {
-    background-color: black;
-    border: none; 
-    margin-bottom: 10px; 
+.sobre > .accordion-item {
+    background-color: black;;
 }
-
-
-.accordion-body {
-    color: white;
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between;
-
-    
-}
-
-
-.accordion-body img {
-    max-width: 45%; 
-    height: auto; 
-    display: block; 
-}
-
-
-.accordion-item:nth-child(odd) .accordion-body {
-    flex-direction: row-reverse;
-}
-
-.accordion-button {
-    background-color: #333;
-    color: white; 
-    border: none; 
-    font-weight: bold;
-}
-
-
-.accordion-button:focus {
-    box-shadow: none; 
-}
-
-.accordion-button:not(.collapsed) {
-    background-color: #444;
-} 
+  
 
 /*CTA*/
 
@@ -218,6 +179,8 @@ body {
 
 #botao {
    margin: 50px;
+   margin-bottom: 200px;
+   margin-top: 100px;
    transform: translateX(345%);
 }
 
@@ -230,7 +193,6 @@ body {
     font-weight: bold; 
     border-radius: 5px; 
     cursor: pointer; 
-    transition: background-color 0.3s ease, transform 0.2s ease; 
 }
 
 
@@ -247,6 +209,38 @@ body {
 
 #botao:active {
     background-color: rgba(210, 151, 23, 0.85);
+}
+
+/*faq*/
+
+.FAQ {
+    background-color: black;
+    height: 160vh;
+}   
+
+.FAQ > h1 {
+    background-color:  rgba(210, 151, 23, 0.85);
+    padding: 20px;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+}
+
+.FAQ > h2 {
+    padding-top: 40px;
+    margin-left: 9.6%;
+    color: white;
+}
+
+#h2 {
+    padding: 10px;
+    padding-left: 0px;
+    color: white;
+}
+
+
+.FAQ > .accordion {
+    margin: auto;
+    width: 80vw;
 }
 
 /*Footer*/
