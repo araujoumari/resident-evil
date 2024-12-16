@@ -102,7 +102,7 @@ body {
     gap: 20px;
 
     width: 98.8vw;
-    height: 200vh;
+    height: 190vh;
 
     margin-top: 50px;
     background-color: black;
@@ -125,7 +125,8 @@ body {
     padding: 50px;
 }
 
-.award-item, .review-item {
+.award-item,
+.review-item {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -133,19 +134,59 @@ body {
 
 }
 
-.award-item img, .review-item img {
+.award-item img,
+.review-item img {
     width: 20%;
     height: auto;
     border-radius: 8px;
 }
 
-.award-item p, .review-item p {
+.award-item p,
+.review-item p {
     font-size: 16px;
     line-height: 1.5;
     color: white;
 }
 
+/* cards */
 
+#card {
+    margin: 0;
+    background-color: black;
+    color: white;
+    padding: 30px;
+    text-shadow: 2px 2px 5px gray;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    background-color: #000000;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    padding: 20px;
+}
+
+.card {
+
+    color: #fff;
+    background-color: #1f1f1f;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+
+.card-title {
+    font-size: 1.25rem;
+}
 
 /*Sobre*/
 
@@ -172,7 +213,7 @@ body {
 }
 
 
-.accordion-body  {
+.accordion-body {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -219,15 +260,35 @@ body {
 
 /* Depoimentos */
 .depoimentos {
-    background-color: rgba(0, 0, 0, 0.631);
+    background-color: black;
+    text-align: center;
+    padding: 20px
 }
 
 .depoimentos h2 {
+
     background-color: rgba(210, 151, 23, 0.85);
     padding: 20px;
     color: white;
-    text-shadow: 2px 2px 5px gray;
+    text-shadow: 2px 2px 5px rgb(82, 78, 78);
+    text-align: left;
 }
+
+
+.video {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    justify-content: center;/
+}
+
+.video iframe {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    height: 300px;
+}
+
 
 /*CTA*/
 

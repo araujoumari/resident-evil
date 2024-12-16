@@ -1,0 +1,29 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+    background-image: url(../Imagens/lycan-resident-evil-village-game-hd-wallpaper-uhdpaper.com-420@1@j.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+  }
+
+.game {
+     background-color: rgba(0, 0, 0, 0.461);
+     width: 100vw;
+     height: 100vh;
+} 
+
+.video-container {
+    background-color: black;
+    width: 70vw;
+    height: 40vw;
+    transform: translate(21%, 6%);
+}
+
+iframe {
+    transform: translate(0.7%,8%);
+}
