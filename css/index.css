@@ -8,7 +8,7 @@
 /*Pré-venda*/
 
 body {
-    background-image: url(Imagens/lycan-resident-evil-village-game-hd-wallpaper-uhdpaper.com-420@1@j.jpg);
+    background-image: url(../Imagens/lycan-resident-evil-village-game-hd-wallpaper-uhdpaper.com-420@1@j.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -96,8 +96,11 @@ body {
 
 /*Premios*/
 
-.premios {
+.content {
     display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
     width: 98.8vw;
     height: 200vh;
 
@@ -105,42 +108,44 @@ body {
     background-color: black;
 }
 
-.premios>h1 {
+.column>#premio {
     color: yellow;
-    margin: 50px;
+    padding: 30px;
     text-shadow: 2px 2px 5px gray;
 }
 
-#awards {
-    margin-top: 130px;
-}
-
-#awards>img {
-    width: 30%;
-    transform: translateX(-100%);
-}
-
-#awards>p {
-    width: 300px;
-    padding: 10px;
+.column>#criticas {
     color: white;
-    transform: translate(10%, -90%);
-}
-
-#criticas {
-    margin: 50px;
-    margin-left: 150px;
-    background-color: pink;
-}
-
-#criticas>h1 {
+    padding: 30px;
     text-shadow: 2px 2px 5px gray;
-    margin-bottom: 30px;
 }
 
-#criticas>img {
-    width: 10%;
+.column {
+    flex: 1;
+    padding: 50px;
 }
+
+.award-item, .review-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+
+}
+
+.award-item img, .review-item img {
+    width: 20%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.award-item p, .review-item p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: white;
+}
+
+
 
 /*Sobre*/
 
@@ -167,7 +172,7 @@ body {
 }
 
 
-.accordion-body {
+.accordion-body  {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -212,11 +217,23 @@ body {
     background-color: #333;
 }
 
+/* Depoimentos */
+.depoimentos {
+    background-color: rgba(0, 0, 0, 0.631);
+}
+
+.depoimentos h2 {
+    background-color: rgba(210, 151, 23, 0.85);
+    padding: 20px;
+    color: white;
+    text-shadow: 2px 2px 5px gray;
+}
 
 /*CTA*/
 
 .cta {
-    background-color: black;
+    padding-top: 50px;
+    background-color: rgb(0, 0, 0);
 }
 
 .cta>p {
@@ -232,8 +249,8 @@ body {
 
 #botao {
     margin: 50px;
-    margin-bottom: 200px;
-    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-top: 50px;
     transform: translateX(345%);
 }
 
@@ -340,98 +357,4 @@ footer {
     color: white;
     padding-top: 10px;
     padding-left: 120px;
-}
-
-
-/*Página de Compra*/
-
-.compra {
-    max-width: 100vw;
-    height: 120vh;
-    background-color: black;
-}
-
-.imagem {
-    width: 40vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    padding: 50px;
-}
-
-
-.conteudo-compra {
-    margin: auto;
-    width: 70%;
-    text-align: center;
-    color: white;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#compra {
-    display: flex;
-    gap: 20px;
-    margin-top: 20px;
-    background-color: #ccc;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-#compra button {
-    background-color: rgba(210, 151, 23, 1);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-#compra button:hover {
-    background-color: rgba(210, 151, 23, 0.85);
-    /* Cor do botão ao passar o mouse */
-}
-
-/*Garantia*/
-#compra>button>a {
-    text-decoration: none;
-    color: white;
-}
-
-.garantia-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: black;
-}
-
-.garantia-page {
-    margin: auto;
-    text-align: center;
-    padding: 50px;
-    border-radius: 8px;
-    box-shadow: 0 0px 8px whitesmoke;
-    width: 80%;
-    max-width: 600px;
-    background-color: white;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: rgba(210, 151, 23, 0.85);
-    color: #111;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #e0e0b8;
 }
