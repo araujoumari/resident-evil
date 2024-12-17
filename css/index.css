@@ -223,7 +223,7 @@ body {
 
 .accordion-body img {
     flex: 1;
-    max-width: 90%;
+    max-width: 70%;
     height: auto;
     border-radius: 10px;
     max-height: 700px;
