@@ -230,6 +230,10 @@ body {
     object-fit: cover;
 }
 
+.accordion-body .arma {
+    width: 40%;
+}
+
 .accordion-body>div {
     flex: 1;
     padding: 10px;
@@ -258,9 +262,6 @@ body {
     background-color: #333;
 }
 
-.arma {
-    width: 50%;
-}
 
 /* Depoimentos */
 .depoimentos {
