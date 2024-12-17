@@ -223,15 +223,11 @@ body {
 
 .accordion-body img {
     flex: 1;
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
     border-radius: 10px;
     max-height: 700px;
     object-fit: cover;
-}
-
-.accordion-body .arma {
-    width: 40%;
 }
 
 .accordion-body>div {
